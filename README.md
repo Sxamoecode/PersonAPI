@@ -1,5 +1,5 @@
 # Person Management System
-## HNG STAGE 2 PROJECT
+## HNG STAGE 2 PROJECT 
 This project is a person management system that allows users to perform CRUD (Create, Read, Update, Delete) operations on individuals. It provides functionalities to create, retrieve, edit, and delete person records based on their unique user ID.
 
 ## Features
