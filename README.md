@@ -41,5 +41,4 @@ This project is a person management system that allows users to perform CRUD (Cr
 [Sxamoecode](https://github/Sxamoecode)
 ## License
 [Github](https://github.com)
-1. [Include step-by-step instructions on how to set up and run the project locally]
-2. [Provide details on how to interact with the API endpoints and perform CRUD]
+
