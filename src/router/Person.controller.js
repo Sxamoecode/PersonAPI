@@ -67,6 +67,11 @@ exports.updatePerson = async function(req, res) {
             });
         };
 
+        const findPrevPerson = await Person.findOne({ fullName: req.body.fullName });
+        if (findPrevPerson) {
+            return res.status(422).send('Name already exist');
+        }
+
         const editName = await Person.findOneAndUpdate(
             { _id: user_id},
             req.body,
