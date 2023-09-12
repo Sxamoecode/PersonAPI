@@ -10,17 +10,17 @@ This project is a person management system that allows users to perform CRUD (Cr
    - Description: This feature allows users to create a new person record by providing necessary information such as full name, age, address, etc. The system assigns a unique user ID to each person upon creation.
 
 2. **Get a Person**
-   - Endpoint:  `/api/api?user_id={{}}` 
+   - Endpoint:  `/api/user_id/{{_id}}` 
    - Method:  `GET` 
    - Description: This feature allows users to retrieve information about a specific person by providing their user ID. The system returns the person's details, including full name, age, address, etc.
 
 3. **Edit a Person**
-   - Endpoint:  `/person/api?user_id={{}}` 
+   - Endpoint:  `/api/user_id/{{_id}}` 
    - Method:  `PUT` 
    - Description: This feature enables users to update the details of a person by specifying their user ID. Users can modify attributes such as full name, age, address, etc. The system updates the person's information accordingly.
 
 4. **Delete a Person**
-   - Endpoint:  `/person/api?user_id={{}}` 
+   - Endpoint:  `/api/user_id/{{_id}}` 
    - Method:  `DELETE` 
    - Description: This feature allows users to delete a person record from the system by providing their user ID. Once deleted, the person's information is permanently removed from the database.
 

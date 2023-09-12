@@ -17,17 +17,17 @@ Create a Person by entering the fullName to the request body
 
 ## 2. GET
 **Get Person**  
-`http://personapi-h2ch.onrender.com/api/user_id?user_id=64ff2b49a9e4a22334d3fe84`  
+`http://personapi-h2ch.onrender.com/api/user_id/64ff2b49a9e4a22334d3fe84`  
 Fetch Person by their _id from from database  
-**Query Params**  
+**Params**  
 **user_id**: `64ff2b49a9e4a22334d3fe84`
 
 ## 3. PUT
 **Edit Person**  
-`http://personapi-h2ch.onrender.com/api/user_id?user_id=64ff2b49a9e4a22334d3fe84`  
+`http://personapi-h2ch.onrender.com/api/user_id/64ff2b49a9e4a22334d3fe84`  
 Edit an already created Person and replace with new fullName passed to the request body
 
-**Query Params**
+**Params**
 **user_id**: 64ff2b49a9e4a22334d3fe84  
 **Body raw (json)**  
 `json`  
@@ -37,8 +37,8 @@ Edit an already created Person and replace with new fullName passed to the reque
 
 ## 4. DELETE
 **Delete Person**  
-`http://personapi-h2ch.onrender.com/api/user_id?user_id=64ff2b49a9e4a22334d3fe84`  
+`http://personapi-h2ch.onrender.com/api/user_id/64ff2b49a9e4a22334d3fe84`  
 Delete Person by inserting their _id to the query section
 
-**Query Params**  
+**Params**  
 **user_id**: 64ff2b49a9e4a22334d3fe84
