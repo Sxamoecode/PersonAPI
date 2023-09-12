@@ -14,13 +14,13 @@ personRouter.use((req, res, next) => {
             personRouter.post('/api', createPerson);
             break;
         case 'GET':
-            personRouter.get('/api/user_id', getPerson);
+            personRouter.get('/api/user_id/:id', getPerson);
             break;
         case 'PUT':
-            personRouter.put('/api/user_id', updatePerson);
+            personRouter.put('/api/user_id/:id', updatePerson);
             break;
         case 'DELETE':
-            personRouter.delete('/api/user_id', deletePerson);
+            personRouter.delete('/api/user_id/:id', deletePerson);
             break;
         default:
             break;

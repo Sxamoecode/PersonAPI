@@ -31,13 +31,12 @@ exports.createPerson = async function(req, res) {
 
 exports.getPerson = async function (req, res) {
     try {
-        const {user_id} = req.query;
-        console.log(user_id);
+        const _id = req.params.id;
 
-        const findPerson = await Person.findOne({ _id: user_id});
+        const findPerson = await Person.findOne({ _id: _id});
         if (!findPerson) {
             return res.status(404).json({
-                Msg: `Person with user_id ${user_id} not found`
+                Msg: `Person with user_id ${_id} not found`
             });
         };
 
@@ -58,7 +57,7 @@ exports.getPerson = async function (req, res) {
 
 exports.updatePerson = async function(req, res) {
     try {
-        const {user_id} = req.query;
+        const user_id = req.params.id;
 
         const findPerson = await Person.findOne({ _id: user_id});
         if (!findPerson) {
@@ -98,7 +97,7 @@ exports.updatePerson = async function(req, res) {
 
 exports.deletePerson = async function (req, res) {
     try {
-        const {user_id} = req.query;
+        const user_id = req.params.id;
 
         const findPerson = await Person.findOne({ _id: user_id });
         if (!findPerson) {
